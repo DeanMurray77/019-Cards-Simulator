@@ -27,7 +27,6 @@ func TestSaveToDeckAndNewDeckFromFile(t *testing.T) {
 	newDeck := newDeck()
 
 	newDeck.saveToFile("_decktesting")
-
 	loadedDeck := newDeckFromFile("_decktesting")
 
 	if len(loadedDeck) != 52 {
