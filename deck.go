@@ -16,11 +16,11 @@ type deck []string
 
 func newDeck() deck {
 	cards := deck{}
-	// cardSuits := []string{"Spades", "Hearts", "Clubs", "Diamonds"}
-	// cardValues := []string{"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"}
+	cardSuits := []string{"Spades", "Hearts", "Clubs", "Diamonds"}
+	cardValues := []string{"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"}
 
-	cardSuits := []string{"Spades", "Hearts"}
-	cardValues := []string{"Ace", "Two", "Three"}
+	// cardSuits := []string{"Spades", "Hearts"}
+	// cardValues := []string{"Ace", "Two", "Three"}
 
 	for _, suit := range cardSuits {
 		for _, value := range cardValues {
