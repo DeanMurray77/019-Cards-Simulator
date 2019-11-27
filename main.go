@@ -1,18 +1,11 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	cards := newDeck()
-	var hand deck
-
-	hand, cards = deal(cards, 5)
+	hand := newDeck()
 	hand.print()
-	fmt.Println("--")
-	cards.print()
-
-	cards.saveToFile("cards.dat")
-
+	fmt.Println("-----")
+	hand.shuffle()
+	hand.print()
 }
